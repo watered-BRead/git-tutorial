@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+<title>Git Tutorial</title>
+<meta charset = "UTF-8">
+<author>UChicago CS 14100, Fall 2025</author>
+</head>
+<body>
+    <p>Git is a version checking tool commonly used in the CS industry.
+        It allows companies to maintain a "main" body of code while giving 
+        engineers permission to "pull" code from the main branch to tweak. If 
+        they do tweak the code, they must then add it back to the main branch
+        in the following manner. 
+    </p>
+    <ol>
+        <li><strong>Add:</strong> By adding the new file to the "commit" list,
+        the computer then knows to add it to the local main branch. This is 
+        done using the command <strong>git add [FILE NAME]</strong> 
+        </li>
+        <li><strong>Commit:</strong> Committing just adds any new files (or any 
+        modified files) to the local main branch. It is done with the command
+        <strong>git commit -m"[CHANGELOG]"</strong>. The strength of git comes 
+        with the included changelog, where you can detail what you changed in 
+        the code (or what the code is). This way, any new commit (whether it be
+        a new body of code or just an edit of existing code) can be easily and 
+        quickly categorized. the -m is an important flag as well in the ssh 
+        code, but explaining it escapes the scope of this current document. 
+    </li>
+    <li>
+        <strong>Push:</strong> A push request is a request to push all files on 
+        the local main branch to the global main branch (for example, a company
+        that asks you to change something will have a main branch in their 
+        repository, and after you change something you would need to add your 
+        code back to the main repository.)
+    </li>
+    </ol>
+    <p>You can check the status of your local github branches with the command 
+        <strong>git status</strong>. 
+    </p>
+    <p>As another note, you do need to create some repository URL that connects
+        your initialized git instance on your machine to the repository you are 
+        working from.
+    </p>
+</body>
